@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>标的当日解读 · 原型界面总览</title>
+<style>
+  :root{--blue:#2e6be6;--ink:#1a1c20;--sub:#8a909a;--line:#e8eaee;--bg:#f5f6f8;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--ink);padding:40px 20px;}
+  .wrap{max-width:1200px;margin:0 auto;}
+  h1{font-size:28px;font-weight:700;margin-bottom:8px;}
+  .lead{color:var(--sub);font-size:15px;line-height:1.7;margin-bottom:12px;}
+  .cta{display:inline-block;background:var(--blue);color:#fff;text-decoration:none;padding:10px 22px;border-radius:8px;font-size:15px;font-weight:600;margin:8px 0 36px;}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:24px;}
+  figure{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:0 2px 12px rgba(20,30,50,.05);}
+  figure img{width:100%;display:block;}
+  figcaption{padding:12px 14px;font-size:14px;font-weight:600;}
+  figcaption span{display:block;font-weight:400;color:var(--sub);font-size:12px;margin-top:3px;line-height:1.5;}
+  .note{margin-top:36px;color:var(--sub);font-size:12px;line-height:1.7;border-top:1px solid var(--line);padding-top:16px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>标的当日解读 · 原型界面总览</h1>
+  <p class="lead">嫁接到财富管理 App 个股详情页的「今日解读」能力（浅色模式）。把当天的行情、消息、资金三类信号，翻译成看得懂、可溯源的「一句话结论 + 归因」；只解释已发生，不做买卖建议与预测。</p>
+  <a class="cta" href="./index.html">▶ 打开可交互 Demo</a>
+  <div class="grid">
+    <figure><img src="assets/01-自选列表.png" alt="自选列表"><figcaption>自选列表<span>每个标的名下带一行「今日解读」结论，列表级触达</span></figcaption></figure>
+    <figure><img src="assets/02-平静日量价异动.png" alt="平静日量价异动"><figcaption>平静日 · 量价异动（主场景）<span>微跌但主力净流入，一句话点破隐藏信号 + 事实摘要</span></figcaption></figure>
+    <figure><img src="assets/03-平静日无异动.png" alt="平静日无异动"><figcaption>平静日 · 无异动<span>「今日平稳无大事」安心确认，不留空白</span></figcaption></figure>
+    <figure><img src="assets/04-波动日有消息.png" alt="波动日有消息"><figcaption>波动日 · 有消息<span>明显波动 + 对应公告，白话归因、每条可溯源</span></figcaption></figure>
+    <figure><img src="assets/05-波动日无消息诚实归因.png" alt="波动日无消息"><figcaption>波动日 · 无消息<span>诚实说明无对应公开消息，给板块/资金线索，不硬凑</span></figcaption></figure>
+    <figure><img src="assets/06-高风险降级.png" alt="高风险降级"><figcaption>高风险 · 降级态<span>重大变化待人审时只给客观事实+原文链接，标注「已更新」</span></figcaption></figure>
+  </div>
+  <p class="note">本页面为产品原型演示，界面数据均为示意，不构成任何投资建议。</p>
+</div>
+</body>
+</html>
